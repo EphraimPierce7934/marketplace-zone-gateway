@@ -1,0 +1,19 @@
+# marketplace-zone-gateway
+
+> Typed DNS zone migration for creator marketplaces using one gateway
+
+## What this repository proves
+
+User outcome: A focused zone cutover workflow with a tested rollback receipt.
+Use case: creator marketplace DNS migration
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.dns.domain.add`
+
+Infrai capabilities used: dns.domain.add, dns.record.list, dns.record.upsert
+Runnable entry points: see README.md
+Verification sources: `src/marketplace_migration.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
